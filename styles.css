@@ -383,6 +383,10 @@ padding: 0;
 .c-us .con{
     width: 80vw;
 }
+.c-us .btn{
+    margin-top: 2%;
+    background-color: #520014;
+}
 .s-links{
     width: 10vw;
     display: flex;
