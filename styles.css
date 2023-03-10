@@ -1,0 +1,399 @@
+/* font-family: 'Bebas Neue', cursive;
+font-family: 'Roboto', sans-serif;
+font-family: 'Tilt Neon', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&family=Tilt+Neon&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth !important;
+    text-decoration: none;
+}
+/* Navbar  */
+body .navbar {
+    background-color: #800020;
+    align-items:center ;
+    width: 100vw;
+    justify-content: space-between;
+    position: fixed;
+    box-shadow:0px 0px 30px rgb(69, 56, 56);
+    padding: 0 1rem 0 1rem;
+    z-index: 20;
+}
+.navbar .logo {
+    width: 4rem;
+    margin: 1rem;
+    margin-left: 5rem;
+    transition: width 0.2s ease-in;
+}
+.navbar .logo:hover{
+    width: 4.5rem;
+    cursor: pointer;
+}
+.navbar .nav-links {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    font-size:1.3rem ;
+}
+.navbar .nav-links .contact button{
+    background-color: white;
+    border-radius: 1rem;
+    border: none;
+    transition: background-color 0.2s ease-in;
+}
+.navbar .nav-links .contact button:hover{
+    background-color: rgb(68, 118, 175);
+}
+.navbar .nav-links .contact button a{
+    color: #772e2e;
+    margin: 2rem;
+}
+.navbar .nav-links .contact button:hover a{
+    color:white
+}
+.navbar .nav-links .nav-link a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    font-size: larger;
+    margin: 2rem;
+    transition: color 0.2s ease-in;
+}
+.navbar .nav-links .nav-link a:hover{
+    color: rgb(68, 118, 175);
+}
+/* Home page  */
+.home{
+    background-color: #A84448;
+    height: 100vh;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+} 
+.home .logo-pg{
+    margin-top: 10%;
+    width: 8%;
+    height: 16%;
+    position: absolute;
+}
+/*Home Content*/
+
+.home .content{
+    margin-top: 6%;
+    padding: 12%;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+}
+.home .content h1{
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: 'Tilt Neon', cursive;
+}
+.home .content h1 span{
+    color: #4f1e1e;
+    transition: color 0.2s ease-in;
+}
+.home .content h1 span:hover{
+    color: #69011b;
+    cursor: pointer;
+}
+.home .content p{
+    font-family: 'Roboto', sans-serif;
+    margin-top: 10%;
+    font-size: 1.3rem;
+}
+.home .content hr{
+    border: 1px solid;
+}
+.home .reach{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: space-evenly;
+}
+.home .reach button{
+    display: flex;
+    background-color: white;
+    border-radius: 1.5em;
+    margin-left: 0.2rem;
+    border: none;
+    transition: background-color 0.2s ease-in;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+}
+.home .reach button:hover{
+    background-color: rgb(92, 21, 21);
+}
+.home .reach button a{
+    text-decoration: none;
+    color: rgb(92, 21, 21);
+    font-size: 1.4rem;
+    margin: 0.5rem;
+    transition: color 0.2s ease-in;
+    padding: %;
+}
+.home .reach button:hover a{
+    color: white;
+}
+    
+    /*Image group*/
+
+.home .grp-img img{
+    width: 90%;
+    height: 60%;
+    margin-top: 40%;
+    border-radius: 30%;
+    transition: box-shadow 0.3s ease-in-out ;
+    box-shadow: 0px 0px 50px #800020;
+}
+.home .grp-img img:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 200px #800020;
+}
+.body hr{
+margin: 0 !important;
+padding: 0;
+}
+/*Gallery*/
+.gallery{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    padding: 10%;
+    background: linear-gradient(#67001a, #c32148);
+    margin: 0;
+}
+.gallery .head1{
+    font-family: 'Roboto', cursive;
+    color: #fff;
+    font-weight: 500;
+    font-size: 4rem;
+    margin-bottom: 5%;
+}
+.gallery .cards-col{
+    display: flex;
+}
+.gallery .cards-col .card {
+    margin: 2%;
+}
+
+.gallery .cards-col .card .card-img-overlay{
+    display: flex;
+    transform:scale(0);
+    transition: all 0.2s 0.1s ease-in-out;
+    background-color: rgba(64, 1, 1, 0.313);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.gallery .cards-col .card:hover .card-img-overlay{
+    transform: scale(1);
+    cursor: pointer;
+}
+.gallery .sub-head{
+    color: #fff;
+    margin-top: 5%;
+    text-decoration: underline;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 600;
+}
+.gallery .carousel{
+    box-shadow: 0px 0px 100px rgb(115, 8, 8);
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    transition: all 0.2s 0.1s ease-in-out;
+}
+.gallery .carousel:hover{
+    box-shadow: 0px 0px 300px rgb(115, 8, 8);
+    cursor: pointer;
+}
+.gallery .carousel .carousel-inner {
+    width: 50vw;
+    height: fit-content;
+
+}
+.gallery .carousel .carousel-inner .carousel-item img{
+    border-radius: 1rem;
+    width: 50vw;
+    height: 50vh;
+}
+/* events  */
+.events{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+    background: linear-gradient(#700b22, #ff3c6d);
+    flex-direction: column;
+}
+.events .head2{
+    font-family: 'Roboto', cursive;
+    color: #fff;
+    font-weight: 500;
+    font-size: 4rem;
+    margin-bottom: 5%;
+}
+.events .fests .fest{
+    display: flex;
+    justify-content: space-between;
+    margin: 5%;
+}
+.events .fests .fest img{
+    width: 30%;
+    border-radius: 6%;
+    transition: all 0.2s 0.1s ease-in-out;
+}
+.events .fests .fest .content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin: 5%;
+    padding: 3%;
+    border: 5px solid;
+    transition: all 0.2s 0.1s ease-in-out;
+}
+.events .fests .fest .content:hover{
+    transform: rotate(-5deg) scale(0.9);
+}
+.events .fests .fest img:hover{
+    padding: 1%;
+    transform: rotate(1deg);
+    box-shadow: 0px 0px 100px rgb(115, 8, 8);
+}
+.events .fests .fest .content h1{
+    font-family: 'Tilt Neon', cursive;
+    color: #520014;
+}
+.events .fests .fest .content p{
+    font-family: 'Roboto', cursive;
+    color: rgb(255, 255, 255);
+    font-size: 1.3rem;
+}
+/* merchandise  */
+.merchandise{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5%;
+}
+.merchandise .head1{
+    font-family: 'Bebas Neue', cursive;
+    color:#800020 ;
+    font-size: 3rem;
+}
+.merchandise .shop-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1%;
+    font-family: 'Roboto', cursive;
+}
+.merchandise .card1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 2rem ;
+    padding: 2%;
+    margin: 2%;
+    transition: all 0.2s 0.1s ease-in-out;
+}
+.merchandise .card1 p{
+    padding: 2%;
+    transition: all 0.2s 0.1s ease-in-out;
+    
+}
+.merchandise .card1:hover{
+    box-shadow:  0px 0px 100px rgb(115, 8, 8);
+}
+.merchandise .card1:hover p{
+    transform: scale(1.2);
+    border: 1px dashed;
+}
+.merchandise .card1 img{
+    width: 50%;
+    height: 50%;
+}
+
+/* about  */
+.abt{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: #a32638;
+    padding: 10%;
+    padding-top: 20% ;
+}
+.abt h1{
+    font-family: 'Bebas Neue', cursive;
+    color: #fff;
+}
+.abt h4{
+    font-family: 'Roboto',cursive;
+    color: #fff;
+}
+.abt span{
+    transition: all 0.2s 0.1s ease-in-out ;
+}
+.abt h3:hover span{
+    color: #520014;
+}
+.abt img{
+    width: 10%;
+}
+.abt .cntnt{
+    transform: scale(0);
+    transition: all 0.2s 0.5s ease-in-out;
+    padding: 3%;
+    margin: 5%;
+    border: 5px dashed;
+}
+.abt:hover .cntnt{
+    transform: scale(1);
+}
+/* contact us  */
+.c-us{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 10%;
+    background-color: #ff3c6d;
+}
+.c-us .head1{
+    color: #520014;
+    font-family: 'Bebas Neue', cursive;
+}
+.c-us label{
+    font-size: 1.5rem;
+    font-family: 'Bebas Neue', cursive;
+}
+.c-us .con{
+    width: 80vw;
+}
+.s-links{
+    width: 10vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5%;
+}
+.s-links a{
+    text-decoration: none;
+    color: #4f1e1e;
+}
+.s-links a:hover{
+    color: #4f1e1e;
+}
